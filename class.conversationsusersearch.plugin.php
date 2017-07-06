@@ -3,12 +3,12 @@
 $PluginInfo['conversationsusersearch'] = [
     'Name' => 'Conversations User Search',
     'Description' => 'Search for conversations by user',
-    'Version' => '1.0',
+    'Version' => '1.0.1',
     'MobileFriendly' => true,
     'Author' => 'Bleistivt',
     'AuthorUrl' => 'http://bleistivt.net',
     'License' => 'GNU GPL2',
-    'GitHub' => 'bleistivt/rssoptions'
+    'GitHub' => 'bleistivt/conversationsusersearch'
 ];
 
 class ConversationsUserSearchPlugin extends Gdn_Plugin {
