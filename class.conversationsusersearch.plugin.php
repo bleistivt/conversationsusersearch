@@ -7,7 +7,8 @@ $PluginInfo['conversationsusersearch'] = [
     'MobileFriendly' => true,
     'Author' => 'Bleistivt',
     'AuthorUrl' => 'http://bleistivt.net',
-    'License' => 'GNU GPL2'
+    'License' => 'GNU GPL2',
+    'GitHub' => 'bleistivt/rssoptions'
 ];
 
 class ConversationsUserSearchPlugin extends Gdn_Plugin {
