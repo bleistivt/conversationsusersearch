@@ -10,6 +10,7 @@ class ConversationsUserSearchPlugin extends Gdn_Plugin {
         }
     }
 
+
     public function messagesController_user_create($sender, $userID = '', $page = 0) {
         if (!Gdn::session()->isValid()) {
             redirect('/entry/signin?Target='.rawurlencode($sender->SelfUrl));
@@ -57,6 +58,7 @@ class ConversationsUserSearchPlugin extends Gdn_Plugin {
 
         $sender->render('all', 'messages', 'conversations');
     }
+
 
     // Model method to get all conversations between two users.
     public function getbyUser($conversationModel, $userID, $searchUser, $offset, $limit) {
