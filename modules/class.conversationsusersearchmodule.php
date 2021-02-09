@@ -9,7 +9,7 @@ class ConversationsUserSearchModule extends Gdn_Module {
     public function toString() {
         $controller = Gdn::controller();
         return wrap(
-            panelHeading(t('Search by User'))
+            panelHeading(Gdn::translate('Search by User'))
                 .$controller->Form->open(['action' => url('messages/user')])
                 .wrap(
                     $controller->Form->textBox('UserSearch', ['MultiLine' => true, 'class' => 'MultiComplete']),

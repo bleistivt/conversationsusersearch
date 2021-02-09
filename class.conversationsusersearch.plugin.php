@@ -30,13 +30,13 @@ class ConversationsUserSearchPlugin extends Gdn_Plugin {
         }
 
         $sender->title(sprintf(
-            t('Conversations with %s'),
+            Gdn::translate('Conversations with %s'),
             htmlspecialchars($searchUser->Name)
         ));
 
         Gdn_Theme::section('ConversationList');
 
-        list($offset, $limit) = offsetLimit($page, c('Conversations.Conversations.PerPage'));
+        list($offset, $limit) = offsetLimit($page, Gdn::config('Conversations.Conversations.PerPage'));
         $page = pageNumber($offset, $limit);
 
         $conversations = $this->getbyUser(
