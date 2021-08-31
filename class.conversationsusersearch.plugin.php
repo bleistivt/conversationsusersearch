@@ -18,7 +18,7 @@ class ConversationsUserSearchPlugin extends Gdn_Plugin {
 
         // Forward search requests to the actual page.
         if (Gdn::request()->isAuthenticatedPostBack()) {
-            if ($searchUser = Gdn::userModel()->getByUsername(Gdn::request()->post('UserSearch'))) {
+            if ($searchUser = Gdn::userModel()->getID(Gdn::request()->post('UserSearch'))) {
                 redirect('messages/user/'.$searchUser->UserID);
             } else {
                 redirect('messages/inbox');
